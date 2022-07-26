@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import "obnulenie.scss";
+
+body {
+	background: url("../../img/004 1.jpg")no-repeat center;
+	background-size: cover;
+}
+
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {}
+.header {
+	padding: 30px 0px;
+}
+.container {
+	max-width: 620px;
+	margin: 0 auto;
+}
+.header__row {
+	display: flex;
+	justify-content: center;
+}
+.header__menu a{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+	color: #645A5B;
+}
+.header__links {
+	margin: 0px 60px 0px 0px;
+}
+.header__links:last-child {
+	margin: 0;
+}
+.information {
+	margin: 0px 0px 0px 500px;
+}
+.information__title {
+	font-family: "Playfair Display SC";
+	font-weight: 400;
+	font-size: 66px;
+	line-height: 75px;
+	letter-spacing: 0.05em;
+	color: #645A5B;
+	margin: 128px 0px 40px 0px;
+}
+.information__subtitle{
+	margin: 0px 0px 45px 5px;
+}
+.information__subtitle a{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.05em;
+	color: #A28E86;
+}
+.information__btn {
+	background: #FAF6F6;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	padding: 12px 27.5px;
+	gap: 10px;
+	width: 221px;
+	height: 45px;
+	margin: 0px 0px 0px 5px;
+}
+
+.information__btn a{
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.05em;
+	padding: 12px 27.5px;
+	color: #645A5B;
+}

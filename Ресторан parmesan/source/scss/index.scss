@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "obnulenie.scss";
+
+body {
+	background: url("../../img/fon.png") center no-repeat;
+	background-size: cover;
+}
+
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.content {
+	padding: 20px 20px;
+}
+.container {
+	max-width: 1345px;
+	margin: 0 auto;
+}
+
+.header {
+	font-family: "Roboto";
+	color: #fff;
+}
+.header__row {
+	justify-content: space-between;
+	display: flex;
+}
+.header p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	margin: 0px 0px 0px 10px;
+}
+.header__adress{
+	display: flex;
+}
+.header__img {
+	width: 39px;
+	height: 34px;
+	margin: 2px;
+}
+.header__btn{
+	background: #090909;
+	border: 2px solid #FFFFFF;
+	width: 245px;
+	height: 43px;
+	padding: 7px 0px;
+}
+.header__btn a{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	color: #fff;
+	padding: 7px 49px;
+}
+
+
+.body-content {
+	margin: 230px 0px 0px 0px;
+}
+.body-content__row {
+	display: flex;
+	justify-content: space-between;
+}
+.body-content__column {
+}
+.calendar {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 87.49%;
+	text-align: center;
+	color: #FFFFFF;
+}
+.calendar p{
+	margin: 0px 0px 30px 0px;
+}
+.calendar img{
+	width: 310px;
+	height: 225px;
+}
+.body-content__menu a{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 87.49%;
+	text-align: right;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 0px 50px 0px;
+}
+.body-content__menu a:last-child{
+	margin: 0;
+}

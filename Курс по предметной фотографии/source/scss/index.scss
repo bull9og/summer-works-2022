@@ -1,0 +1,336 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../../fonts/Gilroy-ExtraBold.eot');
+	src: local('☺'), url('../../fonts/Gilroy-ExtraBold.woff') format('woff'), url('fonts/Gilroy-ExtraBold.ttf') format('truetype'), url('fonts/Gilroy-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../../fonts/Gilroy-Light.eot');
+	src: local('☺'), url('../../fonts/Gilroy-Light.woff') format('woff'), url('fonts/Gilroy-Light.ttf') format('truetype'), url('fonts/Gilroy-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@import "obnulenie.scss";
+
+
+
+.wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template: repeat(4, auto) / 100%;
+	grid-template-areas: "section-1" "section-2" "section-3" "section-4";
+}
+
+
+
+.section-1 {
+	grid-area: section-1;
+	display: grid;
+	grid-template-columns: 1fr 510px;
+	grid-template-rows: 100vh;
+	grid-template-areas: "main" "side";
+}
+.section-1__column1 {
+	grid-area: main;
+	background: #232323;
+}
+.section-1__header {
+	display: grid;
+	grid-template-columns: 15% auto 10%;
+	grid-template-rows: 128px;
+	align-items: center;
+}
+.section-1__menu {
+	grid-column: 2 / 3;
+}
+.section-1__menu ul{
+	display: flex;
+}
+.section-1__menu li {
+	margin: 0px 60px 0px 0px;
+}
+.section-1__menu li:last-child {
+	margin: 0;
+}
+.section-1__menu a {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+.section-1__main {
+	display: grid;
+	grid-template-columns: 15% auto 15%;
+}
+.section-1__text {
+	margin: 91px 0px 0px 0px;
+	grid-column: 2 / 3;
+}
+.section-1__sale {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+	color: #F3833C;
+	margin: 0px 0px 30px 0px;
+}
+.section-1__title {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 88px;
+	color: #FFFFFF;
+	margin: 0px 0px 55px 0px;
+}
+.section-1__subtitle {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 150.3%;
+	color: #FFFFFF;
+	margin: 0px 0px 50px 0px;
+}
+.section-1__pricesale {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 150.3%;
+	text-decoration-line: line-through;
+	color: #FFFFFF;
+	margin: 0px 0px 5px 0px;
+}
+.section-1__price {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 150.3%;
+	color: #FFFFFF;
+	margin: 0px 0px 50px 0px;
+}
+.section-1__button a {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 32px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 10px 40px;
+	background: #F3833C;
+	border-radius: 20px;
+}
+.section-1__column2 {
+	background: url("../../img/image 84.png") center no-repeat;
+	background-size: cover;
+}
+.section-1__img {
+	margin: 10% 0px 0px 0px;
+}
+.section-1__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+.section-2 {
+	grid-area: section-2;
+	display: grid;
+	grid-template-columns: 1fr 510px;
+	grid-template-rows: 100vh;
+	grid-template-areas: "main" "side";
+}
+.section-2__column1 {
+	grid-area: main;
+	background: #fff;
+}
+.section-2__main {
+	display: grid;
+	grid-template-columns: 15% auto 15%;
+}
+.section-2__text {
+	margin: 75px 0px 0px 0px;
+	grid-column: 2 / 3;
+}
+.section-2__title {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 81px;
+	color: #232323;
+	margin: 0px 0px 20px 0px;
+}
+.section-2__subtitle {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 150.3%;
+	color: #232323;
+	margin: 0px 0px 50px 0px;
+}
+.section-2__list {}
+.section-2__list span {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 123.8%;
+	color: #F3833C;
+}
+.section-2__list li {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 150.3%;
+	color: #232323;
+	padding: 0px 0px 0px 140px;
+	margin: 0px 0px 62px 0px;
+}
+.section-2__list li:nth-child(1) {
+	background: url("../../img/Graduate.png") 0 0 no-repeat;
+}
+.section-2__list li:nth-child(2) {
+	background: url("../../img/Hard to Find.png") 0 0 no-repeat;
+}
+.section-2__list li:nth-child(3) {
+	background: url("../../img/Commercial.png") 0 0 no-repeat;
+	margin: 0;
+}
+.section-2__column2 {
+	background: url("../../img/image 85.png") center no-repeat;
+	background-size: cover;
+}
+
+
+
+.section-3 {
+	grid-area: section-3;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100%;
+	grid-template-areas: "main";
+}
+.section-3__column1 {
+	grid-area: main;
+	background: #232323;
+}
+.section-3__main {
+	display: grid;
+	grid-template-columns: 11% auto 11%;
+}
+.section-3__title {
+	margin: 75px 0px 50px 0px;
+	grid-column: 2 / 3;
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 81px;
+	color: #FFFFFF;
+}
+.section-3__items {
+	grid-column: 2 / 3;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(auto, 390px));
+	column-gap: 135px;
+	grid-row-gap:100px;
+	margin: 0px 0px 75px 0px;
+}
+.section-3__item img {
+	width: 100%;
+	object-fit: cover;
+}
+.item__title {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 123.8%;
+	color: #F3833C;
+}
+.item__subtitle {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 150.3%;
+	color: #FFFFFF;
+}
+
+
+
+.section-4 {
+	grid-area: section-4;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100%;
+	grid-template-areas: "main";
+}
+.section-4__body {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 11% auto 11%;
+}
+.section-4__main {
+	grid-column: 2 / 3;
+	margin: 75px 0px 0px 0px;
+}
+.section-4__title {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 81px;
+	color: #232323;
+}
+.section-4__text {
+	margin: 70px 0px 0px 0px;
+}
+.section-4__list h2 {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 150.3%;
+	color: #F3833C;
+}
+.section-4__list div:last-child {
+	max-width: 900px;
+	margin: 0px 0px 60px 60px;
+}
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+.list__title {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 150.3%;
+	color: #000000;
+	margin: -15px 0px 0px 0px;
+}
+.list__title span {
+	font-family: 'Gilroy';
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 123.8%;
+	color: #F3833C;
+}
+.list__subtitle {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 150.3%;
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+}
+.list__list li{
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 150.3%;
+	color: #000000;
+	padding: 0px 0px 0px 26px;
+	margin: 0px 0px 10px 0px;
+	background: url("../../img/Ellipse 5.png") 0 8px no-repeat;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import "obnulenie.scss";
+
+
+body{
+	background: url("../../img/index.jpg")no-repeat center;
+	background-size: cover;
+}
+
+.wrapper {
+	min-height: 100%;
+	flex-direction: column;
+	display: flex;
+}
+.header {
+	padding: 40px 20px;
+}
+.container {
+	max-width: 1300px;
+	margin: 0px auto;
+}
+.header__row {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+.header__imglogo {
+	margin: -9px 0px 0px 0px;
+	width: 40px;
+	height: 44px;
+}
+.header__imginst {
+	margin: -11px 0px 0px 0px;
+	width: 36px;
+	height: 36px;
+}
+.header__menu a {
+	margin: 0px 40px 0px 0px;
+}
+.header__menu a:last-child {
+	margin: 0px;
+}
+.header__link {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.information {
+	margin: 250px 20px 0px 20px ;
+}
+.information__row{
+	text-align: center;
+	justify-content: space-between;
+	justify-content: center;
+	display: flex;
+	margin: 0px 0px 60px 0px;
+}
+.information__title {
+	font-family: "Roboto";
+	font-weight: 100;
+	font-size: 140px;
+	line-height: 137px;
+	text-align: center;
+	letter-spacing: 0.15em;
+	color: #FEFEFE;
+}
+
+.button__row {
+	justify-content: center;
+	display: flex;
+}
+.button__links1 {
+	margin: 0px 30px 0px 0px;
+	padding: 10px 40px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FEFEFE;
+	border: 3px solid #FEFEFE;
+}
+.button__links1:hover{
+	background: #FEFEFE;
+	color: #000;
+	transition: 0.3s;
+}
+.button__links2 {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FEFEFE;
+	padding: 10px 40px;
+	border: 3px solid #FEFEFE;
+}
+.button__links2:hover{
+	background: #FEFEFE;
+	color: #000;
+	transition: 0.3s;
+}

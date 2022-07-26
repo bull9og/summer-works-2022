@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import "obnulenie.scss";
+
+body {
+	background: linear-gradient(0deg, #364555 0%, #5C6F85 0.01%, #91A9B6 100%) fixed;
+}
+img {
+	max-width: 100%;
+}
+
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	justify-content: space-between;
+}
+.content {
+	padding: 20px 40px;
+	flex: 1 1 auto;
+}
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+
+.header {
+	margin: 0px 0px 50px 0px;
+}
+.header__row {
+	display: flex;
+	justify-content: center;
+}
+
+
+.body {}
+.title {
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 86px;
+	text-align: center;
+	color: #F7F7F7;
+	margin: 0px 0px 40px 0px;
+}
+.body__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.body__column li{
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: right;
+	color: #F7F7F7;
+	margin: 0px 0px 50px 0px;
+}
+.body__column li:after{
+	content: "";
+	margin: 10px 0px 0px 15px;
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	background: #F7F7F7;
+	border-radius: 4px;
+}
+
+
+.footer {
+	padding: 40px;
+}
+.footer__row {
+	display: flex;
+	justify-content: center;
+}
+.footer__column {
+	margin: 0px 30px;
+}

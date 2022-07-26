@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+@import "obnulenie.scss";
+
+body {
+	font-family: "Roboto";
+}
+
+.wrapper {
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	.content {
+		flex: 1 1 auto;
+		padding: 30px 0px;
+	}
+	.header__body {
+		.header__row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 70px;
+			justify-content: space-between;
+		}
+		.header__link {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 128.9%;
+		}
+		.header__link a{
+			color: #000;
+			margin: 0px 60px 0px 0px;
+		}
+		.header__link a:last-child{
+			margin: 0px 15px 0px 0px;
+		}
+		.header__telephon{
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 128.9%;
+		}
+	}
+	.tipografica {
+		padding: 90px 0px 0px 0px;
+		.tipografica__row {}
+		.tipografica__body {}
+		.tipografica__title {
+			font-family: "Bebas Neue";
+		}
+		.tipografica__title p:first-child{
+			font-size: 70px;
+		}
+		.tipografica__title p:last-child{
+			font-size: 245px;
+			margin: -20px 0px 0px 0px;
+		}
+		.tipografica__subtitle {
+			font-family: 'Roboto';
+			font-size: 20px;
+			line-height: 152.9%;
+			margin: -5px 0px 0px 530px;
+		}
+		}
+	.tipografica__link-body {
+		max-width: 205px;
+		height: 58px;
+		background: #C72626;
+		margin: 50px 0px 0px 530px;
+		.tipografica__link {
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+			letter-spacing: 0.055em;
+			color: #FAFAFA;
+			padding: 14px 0px;
+		}
+	}
+	.footer {
+		.footer__row {
+			display: flex;
+			height: 60px;
+			justify-content: center;
+			align-items: center;
+		}
+		.footer__text {
+			color: #000;
+			font-size: 12px;
+			letter-spacing: 0.3px;
+		}
+	}
+}
+
+	.container {
+		max-width: 1025px;
+		margin: 0 auto;
+	}

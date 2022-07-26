@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap");
+/*---!!ОБНУЛЕНИЕ!!---*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -wedkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*------------------------------------------------------*/
+.wrapper {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content {
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__level {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+}
+
+.header__menu a {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+  margin: 0px 60px 0px 0px;
+}
+
+.header__menu a:last-child {
+  margin: 0;
+}
+
+.header__btn {
+  font-family: "Manrope";
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 18px;
+  color: #980003;
+  border: 3px solid #980003;
+  padding: 8px 60px;
+  border-radius: 20px;
+}
+
+.body {
+  margin: 115px 0px 0px 0px;
+}
+
+.body__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body__column {
+  padding: 0px 10px;
+}
+
+.body__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 62px;
+  letter-spacing: 0.035em;
+  color: #980003;
+  margin: 0px 0px 60px 0px;
+}
+
+.body__subtitle li {
+  background: url("../../img/015 1.png") 0 4px no-repeat;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 24px;
+  color: #101010;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 35px;
+}
+
+.body__btn {
+  margin: 70px 0px 0px 0px;
+}
+
+.body__btn a {
+  font-family: "Manrope";
+  font-weight: 550;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #980003;
+  border-radius: 30px;
+  padding: 8px 70px;
+}
+
+.body2 {
+  margin: 130px 0px 0px 0px;
+}
+
+.body2__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body2__title {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 89%;
+  letter-spacing: 0.035em;
+  color: #101010;
+  text-align: center;
+}
+
+.body2__column {
+  margin: 40px 90px 0px 0px;
+}
+
+.body2__column:last-child {
+  margin: 40px 0px 0px 0px;
+}
+
+.body2__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body2__text p {
+  padding: 0px 0px 0px 35px;
+  font-family: "Manrope";
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 18px;
+  color: #101010;
+}
+
+.body2__text span {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 89%;
+  letter-spacing: -0.035em;
+  color: #E11217;
+}

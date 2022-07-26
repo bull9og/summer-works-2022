@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "obnulenie.scss";
+
+body {
+	background: linear-gradient(122.98deg, #B0004A -2.14%, #651989 35.98%, #004F89 73.56%, #008981 101.25%) fixed;
+	background-size: cover;
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.content { 
+	padding: 30px 40px;
+}
+.container {
+	max-width: 1590px;
+	margin: 0 auto;
+}
+
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo {}
+.header__links a{
+	margin: 0px 15px 0px 0px;
+}
+.header__links a:last-child{
+	margin: 0;
+}
+
+
+
+.body {
+	margin: 140px 0px 0px 0px;
+}
+.body__title {
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 130px;
+	line-height: 130px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	margin: 0px 0px 60px 0px;
+}
+.body__row {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+.body__column {
+	margin: 0px 100px 0px 0px;
+}
+.body__column:last-child{
+	margin: 0;
+}
+.body__info {
+	max-width: 955px;
+}
+.body__info p{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 155.19%;
+	color: #FFFFFF;
+}
+.body__info span{
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 155.19%;
+	color: #FFFFFF;
+}
+.body__opisanie {
+	max-width: 440px;
+}
+.body__opisanie span{
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 155.19%;
+	color: #FFFFFF;
+}
+.body__opisanie p{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 155.19%;
+	color: #FFFFFF;
+}
+
+
+.body-information-column {
+	margin: 140px 0px 0px 0px;
+}
+.body-information-column__row {
+	display: flex;
+	justify-content: space-between;
+}
+.body-information-column__column {
+	text-align: center;
+	max-width: 320px;
+	margin: 0px 20px 0px 0px;
+}
+.body-information-column__column:last-child {
+	margin: 0;
+}
+.body-information-column__column img {
+	margin: 0px 0px 20px 0px;
+}
+.body-information-column__column p {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 155.19%;
+	text-align: center;
+	color: #FFFFFF;
+}
+.body-information-column__column span {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 155.19%;
+	text-align: center;
+	color: #FFFFFF;
+}
