@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/*---!!ОБНУЛЕНИЕ!!---*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -wedkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*------------------------------------------------------*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* Слайдер */
+.slick-slider {
+  position: relative;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  border-radius: 3%;
+  max-width: 520px;
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.slick-arrow {
+  font-size: 0;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  z-index: 1;
+}
+
+/* Стрелка влево */
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  position: absolute;
+  background: url("../../img/icon/switch.svg") center center no-repeat;
+  width: 35px;
+  height: 40px;
+  right: -35px;
+  top: 45%;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 95%;
+  left: 25%;
+}
+
+.slick-dots li {
+  margin: 0 25px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  cursor: pointer;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background: #FFFFFF;
+  border-radius: 50%;
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  cursor: default;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+}
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 40px;
+  margin-bottom: 250px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__menuList li {
+  margin: 0 30px;
+}
+.header__menuList a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header__menuList a:hover {
+  text-decoration: underline;
+}
+
+.header__languageInstallContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__install img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.surviveAtAllCosts {
+  height: 100vh;
+  background: url("../../img/bg/bg image.jpg") bottom center/cover no-repeat;
+}
+
+.surviveAtAllCosts__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  margin-bottom: 310px;
+}
+
+.surviveAtAllCosts__title {
+  margin-bottom: 8px;
+}
+.surviveAtAllCosts__title h1 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.surviveAtAllCosts__subTitle {
+  margin-bottom: 55px;
+}
+.surviveAtAllCosts__subTitle p {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.surviveAtAllCosts__buttonBuy span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1A1917;
+}
+.surviveAtAllCosts__buttonBuy span:first-child:after {
+  content: "│";
+  margin: 0 12px;
+}
+.surviveAtAllCosts__buttonBuy a {
+  padding: 25px 20px;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 4px;
+}
+
+.surviveAtAllCosts__linkTheStory {
+  text-align: center;
+}
+.surviveAtAllCosts__linkTheStory a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  background: url("../../img/icon/scroll down.svg") bottom center no-repeat;
+}
+
+.aboutGallery {
+  height: 100vh;
+  background: url("../../img/bg/bg image 2.jpg") center center/cover no-repeat;
+  padding: 0 40px;
+}
+
+.aboutGallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutGallery__aboutContent {
+  margin-right: 30px;
+  margin-top: 240px;
+}
+
+.aboutContent {
+  max-width: 800px;
+}
+
+.aboutContent__upTitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.aboutContent__title {
+  max-width: 400px;
+  float: left;
+}
+.aboutContent__title h2 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  position: relative;
+}
+.aboutContent__title h2::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  height: 2.5px;
+  width: 200%;
+  background: #fff;
+  bottom: -10px;
+  left: 0;
+}
+
+.aboutContent__aboutText {
+  max-width: 500px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #FFFFFF;
+  float: right;
+}
+.aboutContent__aboutText p:last-child {
+  margin-top: 25px;
+}
+.aboutContent__aboutText p:last-child span {
+  border-bottom: 4px solid #FFB548;
+}
+
+.aboutGallery__galleryContent {
+  margin-top: 170px;
+}
+
+.galleryContent {
+  max-width: 600px;
+  height: auto;
+}
+
+.galleryContent__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.galleryContent__item {
+  margin-right: 20px;
+}
+.galleryContent__item img {
+  border-radius: 3%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gameFeatures {
+  height: 100vh;
+  background: url("../../img/bg/bg image 3.jpg") center center/cover no-repeat;
+  padding: 0 40px;
+}
+
+.gameFeatures__container {
+  max-width: 500px;
+  margin: 0 8% 0 auto;
+  padding-top: 160px;
+}
+
+.gameFeatures__textTitleContainer {
+  margin-bottom: 70px;
+}
+
+.gameFeatures__upTitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.gameFeatures__title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.information__list li {
+  margin-bottom: 35px;
+}
+
+.information__title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFB548;
+}
+
+.information__subTitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #FFFFFF;
+  display: none;
+}

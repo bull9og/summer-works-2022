@@ -1,0 +1,405 @@
+@import "obnulenie.scss";
+
+//				FONTS				//
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+//				FONTS-END				//
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.main {}
+
+
+//				SLIDE				//
+
+/* Слайдер */
+.slick-slider{
+	position: relative;
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	border-radius: 3%;
+	max-width: 520px;
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+
+/* Слайд */
+.slick-slide{}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+
+}
+
+/* Слайд основной */
+.slick-slide.slick-current{}
+
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка */
+.slick-arrow{
+	font-size: 0;
+	transition: 700ms;
+	z-index: 1;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	position: absolute;
+	background: url("../../img/icon/switch.svg") center center no-repeat;
+	width: 35px;
+	height: 40px;
+	right: -35px;
+	top: 45%;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+	opacity: 0;
+	cursor: default;
+}
+
+/* Точки (булиты) */
+.slick-dots{
+	position: absolute;
+	display: flex;
+	top: 95%;
+	left: 25%;
+}
+.slick-dots li{
+	margin: 0 25px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 1.5px solid #FFFFFF;
+	transition: 700ms;
+	cursor: pointer;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active{
+	background: #FFFFFF;
+	border-radius: 50%;
+	font-size: 0;
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	cursor: default;
+}
+
+/* Элемент точки */
+.slick-dots li button{
+	font-size: 0;
+}
+
+//				SLIDE-END				//
+
+
+//				HEADER				//
+
+.header {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 10px 40px;
+	margin-bottom: 250px;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	img {
+	max-width: 100%;
+	height: auto;
+	}
+}
+.header__menuContainer {}
+.header__menu {}
+.header__menuList {
+	display: flex;
+	li {
+	margin: 0 30px;
+	}
+	a {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: right;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+		&:hover {
+		text-decoration: underline;
+		}
+	}
+}
+.header__languageInstallContainer {
+	display: flex;
+}
+.header__language {}
+.header__install {
+	img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 10px;
+	}
+}
+
+//				HEADER-END				//
+
+
+//				MAIN---Section-1   surviveAtAllCosts				//
+
+.surviveAtAllCosts {
+	height: 100vh;
+	background: url("../../img/bg/bg image.jpg") bottom center/cover no-repeat;
+}
+.surviveAtAllCosts__container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 40px;
+	text-align: center;
+	margin-bottom: 310px;
+}
+.surviveAtAllCosts__title {
+	margin-bottom: 8px;
+	h1 {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 80px;
+	line-height: 80px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	}
+}
+.surviveAtAllCosts__subTitle {
+	margin-bottom: 55px;
+	p {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	}
+}
+.surviveAtAllCosts__buttonBuy {
+	span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #1A1917;
+		&:first-child:after {
+		content: "│";
+		margin: 0 12px;
+		}
+	}
+	a {
+	padding: 25px 20px;
+	background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+	border-radius: 4px;
+	}
+}
+.surviveAtAllCosts__linkTheStory {
+	text-align: center;
+	a {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+	background: url("../../img/icon/scroll down.svg") bottom center no-repeat;
+	}
+}
+
+//				MAIN---Section-1   surviveAtAllCosts-END				//
+
+
+//				MAIN---Section-2   aboutGallery				//
+
+.aboutGallery {
+	height: 100vh;
+	background: url("../../img/bg/bg image 2.jpg") center center/cover no-repeat;
+	padding: 0 40px;
+}
+.aboutGallery__container {
+	display: flex;
+	max-width: 1440px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.aboutGallery__aboutContent {
+	margin-right: 30px;
+	margin-top: 240px;
+}
+.aboutContent {
+	max-width: 800px;
+}
+.aboutContent__upTitle {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.aboutContent__title {
+	max-width: 400px;
+	float: left;
+	h2 {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 80px;
+	line-height: 80px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 60px;
+	position: relative;
+		&::after {
+		content: "";
+		z-index: 2;
+		position: absolute;
+		height: 2.5px;
+		width: 200%;
+		background: #fff;
+		bottom: -10px;
+		left: 0;
+		}
+	}
+}
+.aboutContent__aboutText {
+	max-width: 500px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: justify;
+	color: #FFFFFF;
+	float: right;
+	p:last-child {
+	margin-top: 25px;
+		span {
+		border-bottom: 4px solid #FFB548;
+		}
+	}
+}
+.aboutGallery__galleryContent {
+	margin-top: 170px;
+}
+.galleryContent {
+	max-width: 600px;
+	height: auto;
+}
+.galleryContent__items {
+	display: flex;
+}
+.galleryContent__item {
+	margin-right: 20px;
+	img {
+	border-radius: 3%;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	}
+}
+
+//				MAIN---Section-2   aboutGallery-END				//
+
+
+//				MAIN---Section-3   gameFeatures				//
+
+.gameFeatures {
+	height: 100vh;
+	background: url("../../img/bg/bg image 3.jpg") center center/cover no-repeat;
+	padding: 0 40px;
+}
+.gameFeatures__container {
+	max-width: 500px;
+	margin: 0 8% 0 auto;
+	padding-top: 160px;
+}
+.gameFeatures__textTitleContainer {
+	margin-bottom: 70px;
+}
+.gameFeatures__upTitle {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+}
+.gameFeatures__title {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 80px;
+	line-height: 80px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.gameFeatures__informationTextContainer {}
+.information {}
+.information__list {
+	li {
+	margin-bottom: 35px;
+	}
+}
+.information__title {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #FFB548;
+}
+.information__subTitle {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: justify;
+	color: #FFFFFF;
+	display: none;
+}
+
+//				MAIN---Section-3   gameFeatures-END				//
+
+
